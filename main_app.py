@@ -6,7 +6,58 @@ st.set_page_config(
     page_icon="🛡️",
     layout="wide"
 )
+# --- SOVEREIGN BRANDING INJECTION ---
+st.markdown("""
+    <style>
+    /* 1. Main Background and Text */
+    .stApp {
+        background-color: #0E1117;
+        color: #FAFAFA;
+    }
 
+    /* 2. Sidebar Customization */
+    section[data-testid="stSidebar"] {
+        background-color: #161B22 !important;
+        border-right: 1px solid #30363D;
+    }
+
+    /* 3. The "NMASK Red" Header Style */
+    h1 {
+        color: #FF4B4B !important;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #FF4B4B;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+    }
+
+    /* 4. Forensic Alert Boxes */
+    .stAlert {
+        border-radius: 0px;
+        border-left: 5px solid #FF4B4B;
+        background-color: #1c1f26;
+    }
+
+    /* 5. Metric Card (The Numbers) */
+    [data-testid="stMetricValue"] {
+        font-family: 'IBM Plex Mono', monospace;
+        color: #FF4B4B !important;
+    }
+    
+    /* 6. Buttons */
+    .stButton>button {
+        border-radius: 0px;
+        border: 1px solid #FF4B4B;
+        background-color: transparent;
+        color: #FAFAFA;
+    }
+    .stButton>button:hover {
+        background-color: #FF4B4B;
+        color: white;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 # --- NAVIGATION & HEADER ---
 st.title("🛡️ NMASK Forensic Sovereign Command Center")
 st.markdown("""
