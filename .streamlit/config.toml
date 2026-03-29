@@ -1,0 +1,21 @@
+[theme]
+# The primary accent color (NMASK Red)
+primaryColor = "#FF4B4B"
+
+# The main background color
+backgroundColor = "#0E1117"
+
+# Color for sidebars and input boxes
+secondaryBackgroundColor = "#262730"
+
+# Main text color
+textColor = "#FAFAFA"
+
+# Font style
+font = "sans serif"
+
+[server]
+# High-performance settings for cloud hosting
+headless = true
+enableCORS = false
+enableXsrfProtection = false
