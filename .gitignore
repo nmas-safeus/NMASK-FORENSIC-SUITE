@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Streamlit secrets and config
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Forensic Data (Prevents accidental upload of audit files)
+*.csv
+*.xlsx
+*.xls
+outputs/
