@@ -1,18 +1,7 @@
-import streamlit as st
-import plotly.graph_objects as go
-
-st.set_page_config(
-    page_title="NMASK Sovereign Command",
-    page_icon="🛡️",
-    layout="wide"
-)
-# --- SOVEREIGN BRANDING INJECTION ---
-st.markdown("""
-    <style>
-    /* 1. Main Background and Text */
+/* 1. Main Background and Text - FORCED */
     .stApp {
-        background-color: #0E1117;
-        color: #FAFAFA;
+        background-color: #0E1117 !important;
+        color: #FAFAFA !important;
     }
 
     /* 2. Sidebar Customization */
